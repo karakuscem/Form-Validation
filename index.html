@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <form novalidate>
+        <label for="email">E-Mail</label>
+        <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required onkeyup="mailValidation()">
+        <p id="p1"></p>
+        <label for="country">Country</label>
+        <input type="text" name="country" id="country" required onkeyup="countryValidation()">
+        <p id="p2"></p>
+        <label for="zipcode">Zip-code</label>
+        <input type="text" name="zipcode" id="zipcode" pattern="(^\d{5}$)|(^\d{5}-\d{4}$)" required onkeyup="zipCodeValidation()">
+        <p id="p3"></p>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required onkeyup="passwordValidation()">
+        <p id="p4"></p>
+        <label for="confirmation">Confirmation</label>
+        <input type="password" name="confirmation" id="confirmation" required onkeyup="confirmationValidation()">
+        <p id="p5"></p>
+        <button id="submit">Submit</button>
+        <p id="p6"></p>
+    </form>
+</body>
+</html>

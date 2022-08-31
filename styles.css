@@ -1,0 +1,17 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.red {
+    border: 3px solid red;
+    outline: none;
+}
+
+.green {
+    border: 3px solid green;
+    outline: none;
+}
